@@ -1,3 +1,15 @@
-<% @lists.each do |list| %>
-  <h2><%= list.name  %></h2>
-<% end %>
+<div class="all-page">
+  <div class="banner">
+</div>
+
+
+    <div class="card-container">
+      <% @lists.each do |list| %>
+        <div class="list-card">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <h2><%= link_to list.name, list_path(list), class: "card" %></h2>
+          <p>Make a list of your favorites <%=list.name%> movies</p>
+        </div>
+      <% end %>
+    </div>
+  </div>

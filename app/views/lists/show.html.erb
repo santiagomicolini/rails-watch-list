@@ -1,4 +1,7 @@
 <%= @list.name %>
-<%= @list.movies.each do |movie| %>
-  <%= movie.title %>
+<% @list.bookmarks.each do |bookmark| %>
+  <%= bookmark.movie.title %>
+  <%= bookmark.comment %>
 <% end  %>
+
+<%= link_to "Back to all lists", lists_path  %>

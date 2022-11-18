@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+
+.banner{
+  background-position-y: 35%;
+  background-image: asset-url("cinema.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.banner h2{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.all-page {
+  background-color: #F2F5EA;
+}
